@@ -12,6 +12,18 @@ export const LocationMap = {
   Melbourne: {
     latitude: -37.81,
     longitude: 144.96
+  },
+  London: {
+    latitude: 51.51,
+    longitude: -0.13
+  },
+  "New York": {
+    latitude: 40.71,
+    longitude: -74.01
+  },
+  "San Francisco": {
+    latitude: 37.77,
+    longitude: -122.42
   }
 };
 
