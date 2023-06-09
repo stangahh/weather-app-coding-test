@@ -23,6 +23,7 @@ export interface DailyWeather {
   tempUnit: string
   feelsLike: number
   interpretation: string
+  interpretationCode: number
   date: string
   day: string
   windspeed: number
@@ -52,6 +53,7 @@ export async function getThisWeekWeather(
         tempUnit: data.daily_units.temperature_2m_max,
         feelsLike: data.daily.apparent_temperature_max[index],
         interpretation: WeatherCodeDescription.get(weatherCode) ?? "Unknown",
+        interpretationCode: weatherCode,
         date: time.split("T")[0],
         day: new Date(time).toLocaleDateString("en-AU", { weekday: "long" }),
         windspeed: data.daily.windspeed_10m_max[index],

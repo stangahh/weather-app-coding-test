@@ -34,7 +34,7 @@ export const Weather = (): JSX.Element => {
         </select>
       </div>
       { weather != null && (
-        <div className="transition-all grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="transition-all grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4">
           {
             weather.map((weather, index) => {
               return <WeatherCard key={index} {...weather}></WeatherCard>;

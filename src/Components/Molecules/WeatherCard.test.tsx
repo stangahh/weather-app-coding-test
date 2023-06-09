@@ -7,6 +7,7 @@ const mockProps: WeatherCardProps = {
   day: "Wednesday",
   feelsLike: 10,
   interpretation: "Good",
+  interpretationCode: 0,
   rainfall: 11,
   rainfallUnit: "mm",
   tempUnit: "C",
@@ -52,13 +53,7 @@ describe("WeatherCard", () => {
 
   it("renders the temp", () => {
     const { getByText } = render(<WeatherCard {...mockProps} />);
-    console.log(getByText)
-    expect(getByText("12", { exact: false })).toBeInTheDocument();
-  });
-
-  it("renders the temp unit", () => {
-    const { getByText } = render(<WeatherCard {...mockProps} />);
-    expect(getByText("C", { exact: false })).toBeInTheDocument();
+    expect(getByText("12C", { exact: false })).toBeInTheDocument();
   });
 
   it("renders the windspeed", () => {
