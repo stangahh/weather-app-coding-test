@@ -4,7 +4,7 @@ import { WeatherCodeDescription, type WeatherRes } from "./api.types";
 /**
  * Hardcoded locations in lieu of building full geolocation search functionality.
  */
-const locationMap = {
+export const LocationMap = {
   Brisbane: {
     latitude: -27.47,
     longitude: 153.03
@@ -15,7 +15,7 @@ const locationMap = {
   }
 };
 
-type SUPPORTED_LOCATION = keyof typeof locationMap;
+export type SUPPORTED_LOCATIONS = keyof typeof LocationMap;
 
 /** A nicer shape than what the API provides */
 export interface DailyWeather {
@@ -32,9 +32,9 @@ export interface DailyWeather {
 }
 
 export async function getThisWeekWeather(
-  location: SUPPORTED_LOCATION
+  location: SUPPORTED_LOCATIONS
 ): Promise<DailyWeather[]> {
-  const search = locationMap[location];
+  const search = LocationMap[location];
   const today = new Date();
   const nextWeek = new Date().setDate(new Date().getDate() + 6);
 
