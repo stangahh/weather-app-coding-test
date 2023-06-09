@@ -52,7 +52,7 @@ export interface WeatherCardProps extends DailyWeather {}
 
 export const WeatherCard = (props: WeatherCardProps): JSX.Element => {
   return (
-    <div className="flex flex-row flex-wrap p-6 m-4 rounded-lg shadow border">
+    <div className="flex flex-row flex-wrap mt-2 p-4 rounded-lg shadow border">
       <div className="w-full sm:w-1/5 grid self-center">
         <span className="block justify-self-center">{determineIcon(props.interpretationCode)}</span>
       </div>
