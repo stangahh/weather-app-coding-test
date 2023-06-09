@@ -1,5 +1,7 @@
 # Shell Weather Coding Test
 
+![Main Build](https://github.com/stangahh/shell-weather/actions/workflows/react-ci.yml/badge.svg)
+
 ## Available Scripts
 
 In the project directory, you can run:
