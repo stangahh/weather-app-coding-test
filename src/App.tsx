@@ -1,5 +1,6 @@
+
 import "./App.css";
-import Weather from "./Organisms/Weather";
+import Weather from "./Components/Organisms/Weather";
 
 export const App = (): JSX.Element => {
   return (
