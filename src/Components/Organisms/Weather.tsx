@@ -22,10 +22,10 @@ export const Weather = (): JSX.Element => {
 
   return (
     <div className="container mx-auto mt-4">
-      <p className="text-4xl font-extrabold pb-2">Shell Weather Forecast</p>
-      <div className="flex flex-row">
+      <div className="flex flex-col sm:flex-row items-center">
+      <h1 className="basis-1/4 text-xl font-extrabold pb-2">Shell Weather Forecast</h1>
         <label htmlFor="locations" className="basis-3/4 text-right pr-2">Select a Location</label>
-        <select id="locations" className="basis-1/4 rounded-lg" onChange={onLocationChange}>
+        <select id="locations" className="basis-1/4 rounded-lg border-2 border-slate-400" onChange={onLocationChange}>
           {
             Object.keys(LocationMap).map((location) => {
               return <option key={location} value={location}>{location}</option>;
