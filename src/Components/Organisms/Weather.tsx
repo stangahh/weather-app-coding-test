@@ -21,7 +21,7 @@ export const Weather = (): JSX.Element => {
   }, [currentLocation]);
 
   return (
-    <div className="container mx-auto mt-4">
+    <div className="container mx-auto">
       <div className="flex flex-col sm:flex-row items-center">
       <h1 className="basis-1/4 text-xl font-extrabold pb-2">Shell Weather Forecast</h1>
         <label htmlFor="locations" className="basis-3/4 text-right pr-2">Select a Location</label>
