@@ -12,8 +12,6 @@ const determineIcon = (weather: number): JSX.Element => {
     case 1:
       return <FaSun size={size}/>; // "Mainly clear"
     case 2:
-    case 80:
-    case 81:
       return <FaCloudSun size={size}/>; // "Partly cloudy"
     case 3:
       return <FaCloud size={size}/>; // "Overcast"
@@ -25,6 +23,8 @@ const determineIcon = (weather: number): JSX.Element => {
     case 55:
     case 61:
     case 63:
+    case 80:
+    case 81:
     case 82:
       return <FaCloudRain size={size}/>; // "Drizzle: Dense"
     case 56:
