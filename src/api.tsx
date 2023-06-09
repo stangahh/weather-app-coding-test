@@ -64,7 +64,7 @@ export async function getThisWeekWeather(
         temp: data.daily.temperature_2m_max[index],
         tempUnit: data.daily_units.temperature_2m_max,
         feelsLike: data.daily.apparent_temperature_max[index],
-        interpretation: WeatherCodeDescription.get(weatherCode) ?? "Unknown",
+        interpretation: WeatherCodeDescription.get(weatherCode)?.split(":")[0] ?? "Unknown",
         interpretationCode: weatherCode,
         date: time.split("T")[0],
         day: new Date(time).toLocaleDateString("en-AU", { weekday: "long" }),
