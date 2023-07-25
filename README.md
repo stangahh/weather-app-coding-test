@@ -1,6 +1,6 @@
-# Shell Weather Coding Test
+# Weather Coding Test
 
-[![Node.js CI](https://github.com/stangahh/shell-weather/actions/workflows/react-ci.yml/badge.svg)](https://github.com/stangahh/shell-weather/actions/workflows/react-ci.yml)
+[![Node.js CI](https://github.com/stangahh/weather-app-coding-test/actions/workflows/react-ci.yml/badge.svg)](https://github.com/stangahh/weather-app-coding-test/actions/workflows/react-ci.yml)
 
 ## Available Scripts
 

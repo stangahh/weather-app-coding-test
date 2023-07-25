@@ -23,7 +23,7 @@ export const Weather = (): JSX.Element => {
   return (
     <div className="container mx-auto p-2">
       <div className="flex flex-col sm:flex-row items-center">
-      <h1 className="basis-2/4 text-left text-xl font-extrabold pb-2">Shell Weather Forecast</h1>
+      <h1 className="basis-2/4 text-left text-xl font-extrabold pb-2">Weather Forecast</h1>
         <label htmlFor="locations" className="basis-1/4 text-right md:pr-2">Select a Location</label>
         <select id="locations" className="basis-1/4 rounded-lg border-2 border-slate-400" onChange={onLocationChange}>
           {

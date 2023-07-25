@@ -4,7 +4,7 @@ import "./App.css";
 import Weather from "./Components/Organisms/Weather";
 
 /** Long and specific to prevent localstorage key clash */
-const localStorageKey = "SHELL_ENERGY_WEATHER_THEME";
+const localStorageKey = "WEATHER_THEME";
 
 export const App = (): JSX.Element => {
   const [theme, setTheme] = useState(localStorage.getItem(localStorageKey) ?? "light");
