@@ -2,6 +2,17 @@
 
 [![Node.js CI](https://github.com/stangahh/weather-app-coding-test/actions/workflows/react-ci.yml/badge.svg)](https://github.com/stangahh/weather-app-coding-test/actions/workflows/react-ci.yml)
 
+An application I made for a company hiring process.
+
+Just a simple weather app built with React, TypeScript, Tailwind.
+
+- 100% Strongly Typed
+- Fully responsive design
+- Atomic component design
+- Integrates with an external API
+- Automated Linting, Testing and Building via Github Actions
+- Built in <4 hours total
+
 ## Available Scripts
 
 In the project directory, you can run:
